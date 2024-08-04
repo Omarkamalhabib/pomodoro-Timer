@@ -1,0 +1,140 @@
+/* Reset some basic elements */
+body, h1, p, div, a, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting up the body */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+/* Styling the container */
+.container {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 350px;
+    text-align: center;
+}
+
+/* Styling the title */
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Styling the painel */
+.painel {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.painel p {
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 20px;
+    transition: background 0.3s, color 0.3s;
+}
+
+
+.painel #work {
+    background: #f76c6c;
+    color: #fff;
+}
+
+.painel #break {
+    background: #4caf50;
+    color: #fff;
+}
+
+.painel p:hover {
+    background: #888;
+    color: #fff;
+}
+
+/* Styling the timer */
+.timer {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background: conic-gradient(#f76c6c 0%, #f76c6c 50%, #4caf50 50%, #4caf50 100%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 2rem auto;
+}
+
+.circle {
+    width: 220px;
+    height: 220px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.time {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333;
+    display: flex;
+    align-items: baseline;
+}
+
+.time p {
+    margin: 0 0.2rem;
+}
+
+/* Styling the controls */
+.controls {
+    position: absolute;
+    bottom: -5rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.controls button, .controls a {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 1rem;
+}
+
+.controls button:hover, .controls a:hover {
+    background: #555;
+}
+
+.controls button i, .controls a i {
+    font-size: 1.2rem;
+}
+/* Active state for work and break */
+.painel p.active {
+    background: #333 !important;
+    color: #fff !important;
+    box-shadow: 0 4px 15px rgb(0, 0, 0,0.3);
+}
+
+
